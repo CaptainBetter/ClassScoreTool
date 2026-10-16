@@ -1,0 +1,15 @@
+# 项目级 Streamlit 配置：Streamlit 启动时会自动读取这个文件
+# （项目级配置优先于全局的 ~/.streamlit/config.toml）。
+#
+# 为什么要有这个文件：
+# Streamlit 首次运行时会在终端里问 "Welcome to Streamlit! Email:"，
+# 直接按回车会被判定为"无效邮箱"并以退出码 -1 结束进程，
+# 于是双击 run.bat 的窗口会瞬间消失、网页也起不来。
+
+[server]
+# 不再询问邮箱（这是真正生效的开关）
+showEmailPrompt = false
+
+[browser]
+# 不收集/上报使用统计
+gatherUsageStats = false

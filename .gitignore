@@ -1,0 +1,26 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- Streamlit ----
+.streamlit/secrets.toml
+
+# ---- 统计产生的数据文件（含同学姓名，不要传到 GitHub）----
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+!示例班级名单.xlsx
+
+# ---- 系统/编辑器 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ---- 本地工具产生的临时目录 ----
+acl-recovery/

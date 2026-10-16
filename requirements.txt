@@ -1,0 +1,23 @@
+# 运行本项目所需的第三方库
+#
+# 安装（国内建议加清华镜像，快很多）：
+#   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+#
+# 双击 run.bat 时会自动用上面这个镜像源。
+
+streamlit>=1.32.0        # 网页界面
+pandas>=2.0.0            # 数据处理
+openpyxl>=3.1.0          # 读写 Excel（.xlsx）
+
+# ---- 模糊匹配 ----
+# rapidfuzz 自带 C++ 实现、各版本 Python 都有现成安装包，装它就够了
+rapidfuzz>=3.6.0
+
+# thefuzz 是纯 Python 的，装它不会带来编译问题（程序仍优先使用 rapidfuzz）
+thefuzz>=0.22.1
+
+# ---- 下面这个默认不装 ----
+# python-Levenshtein 需要编译，新版本 Python（比如 3.14）常常没有现成的安装包，
+# 会让 pip 去编源码并卡很久 —— 这是"安装依赖卡住没反应"最常见的原因。
+# 想装的话把下面这行的 # 去掉：
+# python-Levenshtein>=0.23.0
